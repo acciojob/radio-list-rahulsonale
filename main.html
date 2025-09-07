@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Radio List</title>
   <style>
-    /* Style even radio buttons to be red */
-    .radio-group input:nth-of-type(even) + label {
-      color: red;
+    .input {
+      color: red; /* text color */
     }
   </style>
 </head>
 <body>
+  <form>
+    <label>
+      <input type="radio" name="options" value="1"> Option 1
+    </label><br>
 
-  <div class="radio-group">
-    <input type="radio" id="radio1" name="options" value="1">
-    <label for="radio1">Option 1</label><br>
+    <label class="input">
+      <input type="radio" name="options" value="2" disabled> Option 2
+    </label><br>
 
-    <input type="radio" id="radio2" name="options" value="2" disabled>
-    <label for="radio2">Option 2 (Disabled)</label><br>
+    <label>
+      <input type="radio" name="options" value="3" checked> Option 3
+    </label><br>
 
-    <input type="radio" id="radio3" name="options" value="3" checked>
-    <label for="radio3">Option 3 (Selected)</label><br>
+    <label class="input">
+      <input type="radio" name="options" value="4"> Option 4
+    </label><br>
 
-    <input type="radio" id="radio4" name="options" value="4">
-    <label for="radio4">Option 4</label><br>
+    <label>
+      <input type="radio" name="options" value="5"> Option 5
+    </label><br>
 
-    <input type="radio" id="radio5" name="options" value="5">
-    <label for="radio5">Option 5</label><br>
-
-    <input type="radio" id="radio6" name="options" value="6">
-    <label for="radio6">Option 6</label>
-  </div>
-
+    <label class="input">
+      <input type="radio" name="options" value="6"> Option 6
+    </label>
+  </form>
 </body>
 </html>
